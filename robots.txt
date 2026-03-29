@@ -1,0 +1,19 @@
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /*.zip$
+Disallow: /*.exe$
+
+# Google-specific (no crawl delay — let Googlebot decide its own pace)
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://qronetic.site/sitemap.xml
